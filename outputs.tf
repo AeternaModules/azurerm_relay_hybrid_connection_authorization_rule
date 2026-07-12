@@ -1,3 +1,7 @@
+output "relay_hybrid_connection_authorization_rules_id" {
+  description = "Map of id values across all relay_hybrid_connection_authorization_rules, keyed the same as var.relay_hybrid_connection_authorization_rules"
+  value       = { for k, v in azurerm_relay_hybrid_connection_authorization_rule.relay_hybrid_connection_authorization_rules : k => v.id }
+}
 output "relay_hybrid_connection_authorization_rules_hybrid_connection_name" {
   description = "Map of hybrid_connection_name values across all relay_hybrid_connection_authorization_rules, keyed the same as var.relay_hybrid_connection_authorization_rules"
   value       = { for k, v in azurerm_relay_hybrid_connection_authorization_rule.relay_hybrid_connection_authorization_rules : k => v.hybrid_connection_name }
