@@ -17,9 +17,9 @@ EOT
     name                   = string
     namespace_name         = string
     resource_group_name    = string
-    listen                 = optional(bool) # Default: false
-    manage                 = optional(bool) # Default: false
-    send                   = optional(bool) # Default: false
+    listen                 = optional(bool)
+    manage                 = optional(bool)
+    send                   = optional(bool)
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_relay_hybrid_connection_authorization_rule's provider source ---
   # Not auto-enabled: either a bespoke provider validator we can't safely translate,
